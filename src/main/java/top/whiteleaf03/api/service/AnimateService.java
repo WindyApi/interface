@@ -12,4 +12,18 @@ public interface AnimateService {
      * @return 返回图片URL
      */
     ResponseResult getAvatar();
+
+    /**
+     * 获取PC动漫背景
+     *
+     * @return 返回图片URL
+     */
+    ResponseResult getBackgroundFromPC();
+
+    /**
+     * 获取PC动漫背景
+     *
+     * @return 返回图片URL
+     */
+    ResponseResult getBackgroundFromMobile();
 }

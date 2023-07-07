@@ -24,4 +24,14 @@ public class AnimateController {
     public ResponseResult getAvatar() {
         return animateService.getAvatar();
     }
+
+    @GetMapping("bg/pc")
+    public ResponseResult getBackgroundFromPC() {
+        return animateService.getBackgroundFromPC();
+    }
+
+    @GetMapping("bg/mobile")
+    public ResponseResult getBackgroundFromMobile() {
+        return animateService.getBackgroundFromPC();
+    }
 }

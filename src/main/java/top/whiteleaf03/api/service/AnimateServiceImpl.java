@@ -32,6 +32,40 @@ public class AnimateServiceImpl implements AnimateService {
         return ResponseResult.success(redirectUrl);
     }
 
+    /**
+     * 获取PC动漫背景
+     *
+     * @return 返回图片URL
+     */
+    @Override
+    public ResponseResult getBackgroundFromPC() {
+        String redirectUrl;
+        try {
+            redirectUrl = getRedirectUrl("https://www.loliapi.com/acg/pc/");
+        } catch (Exception e) {
+            return ResponseResult.error(e.getMessage());
+        }
+        log.info(redirectUrl);
+        return ResponseResult.success(redirectUrl);
+    }
+
+    /**
+     * 获取PC动漫背景
+     *
+     * @return 返回图片URL
+     */
+    @Override
+    public ResponseResult getBackgroundFromMobile() {
+        String redirectUrl;
+        try {
+            redirectUrl = getRedirectUrl("https://www.loliapi.com/acg/pe/");
+        } catch (Exception e) {
+            return ResponseResult.error(e.getMessage());
+        }
+        log.info(redirectUrl);
+        return ResponseResult.success(redirectUrl);
+    }
+
     private String getRedirectUrl(String path) throws Exception {
         HttpURLConnection conn = (HttpURLConnection) new URL(path)
                 .openConnection();
