@@ -1,4 +1,4 @@
-package top.whiteleaf03.api.service;
+package top.whiteleaf03.api.service.animate;
 
 import top.whiteleaf03.api.util.ResponseResult;
 

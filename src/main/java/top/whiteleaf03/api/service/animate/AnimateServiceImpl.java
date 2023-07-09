@@ -1,4 +1,4 @@
-package top.whiteleaf03.api.service;
+package top.whiteleaf03.api.service.animate;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
