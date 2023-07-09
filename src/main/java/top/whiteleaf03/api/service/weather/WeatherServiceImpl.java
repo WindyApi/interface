@@ -41,7 +41,7 @@ public class WeatherServiceImpl implements WeatherService {
      */
     @Override
     public ResponseResult queryCityFeatureWeather(CityNameDTO cityNameDTO) {
-        String url = DAY_API_ADDRESS + "&appid=" + APP_ID + "&appsecret=" + APP_SECRET + "&city=" + cityNameDTO.getCityName();
+        String url = WEEK_API_ADDRESS + "&appid=" + APP_ID + "&appsecret=" + APP_SECRET + "&city=" + cityNameDTO.getCityName();
         String result = HttpRequest.get(url)
                 .execute()
                 .body();
