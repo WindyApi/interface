@@ -5,6 +5,8 @@ import top.whiteleaf03.api.util.ResponseResult;
 
 /**
  * @author WhiteLeaf03
+ *
+ * API支持：www.tianqiapi.com
  */
 public interface WeatherService {
     /**
