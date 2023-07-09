@@ -1,13 +1,11 @@
 package top.whiteleaf03.api.service;
 
-import cn.hutool.http.HttpUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import top.whiteleaf03.api.util.ResponseResult;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Objects;
 
 /**
  * @author WhiteLeaf03
