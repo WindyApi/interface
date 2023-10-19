@@ -45,7 +45,7 @@ public class EmailServiceImpl implements EmailService {
         javaMailSender.send(new SimpleMailMessage() {{
             setSubject("[WindyApi开放平台]");
             setText(emailInfoDTO.getMessage());
-            setFrom("whiteleaf03@163.com");
+            setFrom("windyapi@163.com");
             setTo(emailInfoDTO.getTarget());
         }});
     }
